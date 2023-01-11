@@ -11,13 +11,16 @@
     header{
     display: flex;
     margin: auto;
-    height:20vh;
+    height: 35rem ;
     width: 100%;
+    
     #img-fondo{
-        height: 70vh;
+        height: 100vh;
         width: 100%;
-        background-image: url(../assets/img/pokemonbackimg.jpeg) ;
+        background-image: url(../assets/img/pokemon_logo_PNG3.png);
         background-size: cover;
+        
+
     }
 }
 </style>
