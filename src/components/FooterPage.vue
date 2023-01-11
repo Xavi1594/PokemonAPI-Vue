@@ -12,7 +12,7 @@
   justify-content: space-around;
   align-items: center;
   height: auto;
-  background-color: darkgoldenrod;
+  background-color: #ffdc00;
   h3{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
