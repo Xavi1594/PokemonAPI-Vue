@@ -12,6 +12,7 @@
   justify-content: space-around;
   align-items: center;
   height: auto;
+  width: 100%;
   background-color: #ffdc00;
   h3{
     font-family: Arial, Helvetica, sans-serif;

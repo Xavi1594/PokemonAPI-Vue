@@ -4,8 +4,10 @@ import FooterPage from './components/FooterPage.vue';
 </script>
 
 <template>
- <FooterPage />
+ 
  <CardsPage />
+ <FooterPage />
+ 
 </template>
 
 <style scoped lang="scss"> 
