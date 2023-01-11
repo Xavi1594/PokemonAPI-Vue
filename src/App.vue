@@ -1,22 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import HeaderPage from './components/HeaderPage.vue';
 </script>
 
 <template>
-  <header>
-   
-    <div class="wrapper">
-  
+  <HeaderPage />
+ 
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+ 
 </template>
 
 <style scoped lang="scss"> 
