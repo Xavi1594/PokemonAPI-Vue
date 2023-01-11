@@ -17,7 +17,8 @@
   h3{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    padding: 1% 0 1% 0;
   }
     
 }
