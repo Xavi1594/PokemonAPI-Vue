@@ -1,38 +1,28 @@
-<script setup>
-import axios from 'axios'
-import { ref } from 'vue';
-// import { RouterLink } from 'vue-router';
+<script>
+import { ref, onMounted } from 'vue';
 
-
-const pokemons = ref ({})
-
-const getData = async () => {
-    try {
-    const {data} = await axios.get('https://pokeapi.co/api/v2/pokemon/')
- 
-pokemons.value = data
-} catch(error) {
-    console.log('error');
-}
-}
-getData()
+export default {
+  setup() {
+    const pokemons = ref({});
+    onMounted(async () => {
+      const response = await fetch('https://pokeapi.co/api/v2/pokemon/');
+      const data = await response.json();
+      const results = await Promise.all(data.results.map(async pokemon => {
+        const res = await fetch(pokemon.url);
+        return await res.json();
+      }));
+      pokemons.value = results
+    });
+    return { pokemons };
+  }
+};
 </script>
 
 <template>
-
- <ul>
-    <li v-for="pokemon in pokemons"  
-          :key="pokemon.id"
-          :pokemon="pokemon"
-        >
-          {{ pokemon.name , pokemon.id, }}
-        </li>
-
- </ul>
-   
-  
+  <ul>
+    <li v-for="pokemon in pokemons" :key="pokemon.name">
+      {{ pokemon.name }}
+      <img :src="pokemon.sprites?.front_default" />
+    </li>
+  </ul>
 </template>
-
-<style scoped lang="scss">
-
-</style>
