@@ -1,17 +1,111 @@
 <script setup>
+function search() {
+    let input = document.querySelector("input").value.toLowerCase()
+    let list = document.querySelectorAll("ul > li")
+    let noItemsText = document.querySelector(".noItemsText")
+    let displayCounter = 0
+
+    // console.log(((list[0].innerHTML).toLowerCase()).includes("pyt", 0))
+    list.forEach((lang) => {
+        if ((lang.innerHTML.toLowerCase()).includes(input, 0) === false){
+            lang.style.display = "none";
+        } else {
+            lang.style.display = "list-item";
+        }
+
+        if (lang.style.display === "none"){
+           displayCounter++;
+        }
+    });
+
+    if (displayCounter === list.length){
+        list.innerHTML = "No items to display";
+        noItemsText.style.display = "initial"
+    } else {
+        noItemsText.style.display = "none"
+    }
+}
+
+
 
 </script>
 
 <template>
- <div class="Button">
-    <h3 class="SearchButton">Search your Pokemon</h3>
-    
- </div>
+ 
+
+
+    <!-- <h1>Search Feature using JS</h1> -->
+
+    <div class="content">
+        <input type="text" onkeyup="search()" placeholder="Search for.." autofocus />
+        <!-- <ul>
+            <li class="languages">Python</li>
+            <li class="languages">C++</li>
+            <li class="languages">Java</li>
+            <li class="languages">C</li>
+            <li class="languages">JavaScript</li>
+            <li class="languages">PHP</li>
+            <li class="languages">Perl</li>
+            <li class="languages">Ruby</li>
+            <li class="languages">Go</li>
+            <li class="languages">CSS</li>
+        </ul>
+        <p class="noItemsText">No items to display</p> -->
+    </div>
+   
+   
+
    
   
 </template>
 
 <style scoped lang="scss">
+
+
+body {
+    background: #eee;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 
+        2px 3px 4px #456,
+        3px 4px 5px #654;
+}
+
+input {
+    /* height: 1.5rem; */
+    max-width: 300px;
+    width: fit-content;
+    margin: 1rem auto;
+    outline: none;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+
+.content {
+    /* border: 3px solid black; */
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+.languages {
+    background-color: #f5deb3;
+    margin: 2px auto;
+    padding: 10px;
+}
+
+.languages:hover {
+    background-color: #f5deb3aa;
+}
+
+.noItemsText {
+    display: none;
+}
 
 </style>
 //  -->

@@ -1,10 +1,11 @@
 <script setup>
+import SearchBar from './components/SearchBar.vue';
 import CardsPage from './components/CardsPage.vue';
 import FooterPage from './components/FooterPage.vue';
 </script>
 
 <template>
- 
+ <SearchBar />
  <CardsPage />
  <FooterPage />
  
