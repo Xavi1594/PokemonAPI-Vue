@@ -20,7 +20,7 @@ export default {
 
 <template>
   <body>
-    <h1>Pokedex</h1>
+    
     <div class="poke-container" id="poke-container">
       
       
