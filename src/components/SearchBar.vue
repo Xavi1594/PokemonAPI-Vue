@@ -25,8 +25,8 @@ function search() {
         noItemsText.style.display = "none"
     }
 }
-
-
+const ul = document.querySelector("pokemon")
+const url = 'https://randomuser.me/api/?results=10';
 
 </script>
 
@@ -37,8 +37,17 @@ function search() {
     <!-- <h1>Search Feature using JS</h1> -->
 
     <div class="content">
-        <input type="text" onkeyup="search()" placeholder="Search for.." autofocus />
-        <!-- <ul>
+        <input type="text" onkeyup="search()" placeholder="Search  ..." autofocus />
+        <h1>pokemon</h1>
+        <ul id="pokemon"></ul>
+
+
+
+
+
+
+
+            <!-- <ul>
             <li class="languages">Python</li>
             <li class="languages">C++</li>
             <li class="languages">Java</li>

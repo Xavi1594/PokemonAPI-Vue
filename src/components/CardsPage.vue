@@ -5,7 +5,7 @@ export default {
   setup() {
     const pokemons = ref({});
     onMounted(async () => {
-      const response = await fetch('https://pokeapi.co/api/v2/pokemon/');
+      const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0');
       const data = await response.json();
       const results = await Promise.all(data.results.map(async pokemon => {
         const res = await fetch(pokemon.url);
@@ -19,10 +19,67 @@ export default {
 </script>
 
 <template>
-  <ul>
-    <li v-for="pokemon in pokemons" :key="pokemon.name">
-      {{ pokemon.name }}
-      <img :src="pokemon.sprites?.front_default" />
-    </li>
-  </ul>
-</template>
+  <body>
+    <h1>Pokedex</h1>
+    <div class="poke-container" id="poke-container">
+      
+      
+      
+      <ul>
+        <li class="pokemon" v-for="pokemon in pokemons" :key="pokemon.name">
+          {{ pokemon.name }}
+          <div class="img-container"> 
+            <img :src="pokemon.sprites?.front_default" />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+    </template>
+    <style>
+    body {
+  background: #efefbb;
+  background: linear-gradient(to right, #d4d3dd, #efefbb);
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+h1 {
+  letter-spacing: 3px;
+}
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.pokemon {
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.pokemon .img-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  ;
+}
+ .img-container img {
+  align-items: center;
+
+}
+.pokemon .img-container img {
+  max-width: 90%;
+  margin-top: 20px;
+}
+</style>
