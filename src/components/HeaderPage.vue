@@ -27,6 +27,8 @@
                         background-color: black;
                         padding-top: 2%;
                         padding-bottom: 2%;
+                        padding-right: 2%;
+                        padding-left: 2%;
                     }
             }
     }

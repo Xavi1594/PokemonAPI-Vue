@@ -36,7 +36,7 @@ export default {
     </div>
   </body>
     </template>
-    <style>
+    <style lang="scss" scoped>
     body {
   background: #efefbb;
   background: linear-gradient(to right, #d4d3dd, #efefbb);
@@ -81,5 +81,5 @@ h1 {
 .pokemon .img-container img {
   max-width: 90%;
   margin-top: 20px;
-}
+} 
 </style>
