@@ -39,7 +39,7 @@ const url = 'https://randomuser.me/api/?results=10';
 
     <div class="content">
         <input type="text" onkeyup="search()" placeholder="Search  ..." autofocus />
-        <h1>pokemon</h1>
+        
         <ul id="pokemon"></ul>
 
 
