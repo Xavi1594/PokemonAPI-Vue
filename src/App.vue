@@ -1,11 +1,19 @@
 <script setup>
+<<<<<<< HEAD
 import SearchBar from './components/SearchBar.vue';
+=======
+import HeaderPage from './components/HeaderPage.vue';
+>>>>>>> 98c062101590beeb302c8e392d16b43ad1a7a6da
 import CardsPage from './components/CardsPage.vue';
 import FooterPage from './components/FooterPage.vue';
 </script>
 
 <template>
+<<<<<<< HEAD
  <SearchBar />
+=======
+ <HeaderPage />
+>>>>>>> 98c062101590beeb302c8e392d16b43ad1a7a6da
  <CardsPage />
  <FooterPage />
  
