@@ -1,15 +1,26 @@
 <script setup>
+<<<<<<< HEAD
 // import HeaderPage from './components/HeaderPage.vue'
 import PokemonSearch from './components/PokemonSearch.vue'
+=======
+import HeaderPage from './components/HeaderPage.vue';
+>>>>>>> 6db3eea4a73daa5f744a58854d42e68e998ec96b
 import CardsPage from './components/CardsPage.vue';
 import FooterPage from './components/FooterPage.vue';
 </script>
 
 <template>
+<<<<<<< HEAD
 <!-- <HeaderPage /> -->
 <PokemonSearch />
     <CardsPage />
     <FooterPage />
+=======
+ <HeaderPage />
+ <CardsPage />
+ <FooterPage />
+ 
+>>>>>>> 6db3eea4a73daa5f744a58854d42e68e998ec96b
 </template>
 
 <style>
