@@ -1,43 +1,57 @@
 <script setup>
+<<<<<<< HEAD
+// import HeaderPage from './components/HeaderPage.vue'
+import PokemonSearch from './components/PokemonSearch.vue'
+=======
 import HeaderPage from './components/HeaderPage.vue';
+>>>>>>> 6db3eea4a73daa5f744a58854d42e68e998ec96b
 import CardsPage from './components/CardsPage.vue';
 import FooterPage from './components/FooterPage.vue';
 </script>
 
 <template>
+<<<<<<< HEAD
+<!-- <HeaderPage /> -->
+<PokemonSearch />
+    <CardsPage />
+    <FooterPage />
+=======
  <HeaderPage />
  <CardsPage />
  <FooterPage />
  
+>>>>>>> 6db3eea4a73daa5f744a58854d42e68e998ec96b
 </template>
 
-<style scoped lang="scss"> 
-
-
-// @media (min-width: 1024px) {
-//   header {
-//     display: flex;
-//     place-items: center;
-//     padding-right: calc(var(--section-gap) / 2);
-//   }
-
-//   .logo {
-//     margin: 0 2rem 0 0;
-//   }
-
-//   header .wrapper {
-//     display: flex;
-//     place-items: flex-start;
-//     flex-wrap: wrap;
-//   }
-
-//   nav {
-//     text-align: left;
-//     margin-left: -1rem;
-//     font-size: 1rem;
-
-//     padding: 1rem 0;
-//     margin-top: 1rem;
-//   }
-// }
+<style>
+  input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 0.5rem;
+    width: 20rem;
+  }
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #3e8e41;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+  }
 </style>
