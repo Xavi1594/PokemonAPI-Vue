@@ -17,7 +17,7 @@
     #img-fondo{
         height: 100vh;
         width: 100%;
-        background-image: url(../assets/img/pokemon_logo_PNG3.png);
+        background-image: url(../assets/img/pokemonbackimg3.png);
         background-size: cover;
         
 
