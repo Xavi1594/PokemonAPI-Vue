@@ -21,7 +21,6 @@ export default {
 };
 </script>
 <template>
-<<<<<<< HEAD
   <div class="grid-container">
     <div v-for="pokemon in displayPokemons" :key="pokemon.name" class="card-container">
       <div :class="`card ${pokemon.types.map(type => type.type.name).join(' ')}`">
@@ -108,69 +107,3 @@ align-items: center;
 justify-content: center;
 }
 </style>
-=======
-  <body>
-    <h1>Pokedex</h1>
-    <div class="poke-container" id="poke-container">
-      
-      
-      
-      <ul>
-        <li class="pokemon" v-for="pokemon in pokemons" :key="pokemon.name">
-          {{ pokemon.name }}
-          <div class="img-container"> 
-            <img :src="pokemon.sprites?.front_default" />
-          </div>
-        </li>
-      </ul>
-    </div>
-  </body>
-    </template>
-    <style lang="scss" scoped>
-    body {
-  background: #efefbb;
-  background: linear-gradient(to right, #d4d3dd, #efefbb);
-  font-family: 'Lato', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-h1 {
-  letter-spacing: 3px;
-}
-.poke-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: space-between;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-.pokemon {
-  background-color: #eee;
-  border-radius: 10px;
-  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-}
-.pokemon .img-container {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  text-align: center;
-  ;
-}
- .img-container img {
-  align-items: center;
-
-}
-.pokemon .img-container img {
-  max-width: 90%;
-  margin-top: 20px;
-} 
-</style>
->>>>>>> 6db3eea4a73daa5f744a58854d42e68e998ec96b
