@@ -40,7 +40,10 @@ export default {
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 1rem;
     justify-content: center;
-    background-color: #A37F60;
+    margin-top: 18%;
+    margin-bottom: 10%;
+    align-content: center;
+    justify-items: center;
 }
 .card-container {
 display: flex;
@@ -54,9 +57,14 @@ padding: 1rem;
 box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 font-size: 12px;
 border-radius: 10%;
+display: grid;
+align-items: center;
+align-content: center;
 }
 
-
+p {
+    font-size: 16px;
+  }
 
 .card-title {
 text-align: center;
@@ -68,6 +76,7 @@ text-shadow: 5px black;
 .card-info {
 text-align: center;
 font-size: 12px;
+  
 }
 .card-image {
 width: 100%;

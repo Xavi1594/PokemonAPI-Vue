@@ -6,10 +6,11 @@ import FooterPage from './components/FooterPage.vue';
 
 <template>
  <HeaderPage />
+ 
  <CardsPage />
  <FooterPage />
  
->>>>>>> 6db3eea4a73daa5f744a58854d42e68e998ec96b
+
 </template>
 
 <style>

@@ -24,7 +24,7 @@
                         width: 100%;
                         height: 50vh;
                         display: flex;
-                        background-color: black;
+                        background-color: #252525;
                         padding-top: 2%;
                         padding-bottom: 2%;
                         padding-right: 2%;

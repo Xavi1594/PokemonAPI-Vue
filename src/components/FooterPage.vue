@@ -13,7 +13,7 @@
   align-items: center;
   height: auto;
   width: 100%;
-  background-color: #ffdc00;
+  background-color: #252525;
   h3{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
